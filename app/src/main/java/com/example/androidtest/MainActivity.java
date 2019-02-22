@@ -98,7 +98,7 @@ public class MainActivity extends Activity {
 	        }
 
 			finally {
-				try { //close may throw checked exception
+				try { //close connection, may throw checked exception
 					if (con != null)
 						con.close();
 				} catch(SQLException e) {
