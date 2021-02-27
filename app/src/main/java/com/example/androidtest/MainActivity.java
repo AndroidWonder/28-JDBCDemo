@@ -53,18 +53,14 @@ public class MainActivity extends Activity {
 	        }
 
 	        Statement stmt = null;
-	        Connection con=null;
-	        try { //create connection and statement objects
-	            con = DriverManager.getConnection (
+
+	        try ( //create connection using try with resources
+	            Connection con = DriverManager.getConnection (
 	                URL,
 	                username,
-	                password);
+	                password)) {
 	            stmt = con.createStatement();
-	        } catch (SQLException e) {
-	        	Log.e("JDBC", "problem connecting");
-	        }
 
-	        try {
 	            // execute SQL commands to create table, insert data, select contents       
 	                stmt.executeUpdate("drop table if exists first;");
 	                stmt.executeUpdate("create table first(id integer primary key, city varchar(25));");
@@ -91,20 +87,10 @@ public class MainActivity extends Activity {
 	                //clean up
 	                t = null;
 
-	                
 	        } catch (SQLException e) {
 	            Log.e("JDBC","problems with SQL sent to "+URL+
 	                ": "+e.getMessage());
 	        }
-
-			finally {
-				try { //close connection, may throw checked exception
-					if (con != null)
-						con.close();
-				} catch(SQLException e) {
-					Log.e("JDBC", "close connection failed");
-				}
-			};
 	    
 		}
 	};
