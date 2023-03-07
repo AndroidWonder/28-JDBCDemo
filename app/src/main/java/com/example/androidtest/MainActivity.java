@@ -44,14 +44,7 @@ public class MainActivity extends Activity {
 			String URL = "jdbc:mysql://webdev.bentley.edu:3306/test";
 	        String username = "jpepe";
 	        String password = "BentleyCS612!";
-/*
-	        try { //load driver into VM memory
-	        	Class.forName("com.mysql.jdbc.Driver");
-	        } catch (ClassNotFoundException e) {
-	            Log.e("JDBC", "Did not load driver");
-	          
-	        }
-*/
+
 	        Statement stmt = null;
 
 	        try ( //create connection using try with resources
