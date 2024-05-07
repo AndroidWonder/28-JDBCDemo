@@ -41,9 +41,9 @@ public class MainActivity extends Activity {
 	
 	private Runnable background = new Runnable() {
 		public void run(){
-			String URL = "jdbc:mysql://webdev.bentley.edu:3306/test";
+			String URL = "jdbc:mysql://webdev.bentley.edu:3306/cs380";
 	        String username = "jpepe";
-	        String password = "BentleyCS612!";
+	        String password = "mysql";
 
 	        Statement stmt = null;
 

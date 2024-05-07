@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/28-JDBCDemo.iml" filepath="$PROJECT_DIR$/28-JDBCDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/28-JDBCDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/28-JDBCDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/28-JDBCDemo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/28-JDBCDemo.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/28-JDBCDemo.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/28-JDBCDemo.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/28-JDBCDemo.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/28-JDBCDemo.app.main.iml" />
